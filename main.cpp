@@ -24,16 +24,15 @@ int main()
 
 //2 задание
     unsigned int N;
-    int c = 10;
     int mult = 1;
 
     std::cin >> N;
     while (N > 0)
     {
-        int cifra = N % c;
-        if ((cifra % 2) == 0)
+        int c = N % 10;
+        if ((c % 2) == 0)
         {
-            mult *= cifra;
+            mult *= c;
         }
         N /= 10;
     }
